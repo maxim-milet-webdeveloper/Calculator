@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <a href="https://github.com/maxim-milet-webdeveloper/Calculator">Github Code</a>
+    <main>
+        <input type="text" class="review">
+        <input type="button" value="C" onclick="clean()">
+        <input type="button" value="<" onclick="back()">
+        <input type="button" value="/" onclick="insert(' / ')">
+        <input type="button" value="X" class="purple" onclick="insert(' * ')">
+        <input type="button" value="7" onclick="insert(7)">
+        <input type="button" value="8" onclick="insert(8)">
+        <input type="button" value="9" onclick="insert(9)">
+        <input type="button" value="-" class="purple" onclick="insert(' - ')">
+        <input type="button" value="4" onclick="insert(4)">
+        <input type="button" value="5" onclick="insert(5)">
+        <input type="button" value="6" onclick="insert(6)">
+        <input type="button" value="+" class="purple" onclick="insert(' + ')">
+        <input type="button" value="1" onclick="insert(1)">
+        <input type="button" value="2" onclick="insert(2)">
+        <input type="button" value="3" onclick="insert(3)">
+        <input type="button" value="=" class="equal" onclick="calculate()">
+        <input type="button" value="0" class="zero" onclick="insert(0)">
+        <input type="button" value="."onclick="insert('.')">
+    </main>
+    <div id="error">
+        <div class="error-wrapper">
+            <h1>Please fill in a valid calculation.</h1>
+            <div id="top-right">x</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
